@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="my.js"></script>
+	<style type="text/css">
+		.design{
+			border-color:transparent; 
+			font-family: monospace;
+			font-size:xx-small;
+			margin: -2px;
+			padding-top:4px;
+			padding-bottom:4px;
+			width:40px;
+			height: 30px;
+			background-color:rgb(225, 225, 225);
+		}
+		.screen{
+			border-color:transparent;
+			background-color:rgb(245, 245, 245);	
+		}
+		.table{
+			border-color: transparent; 
+			background-color: rgb(230, 230, 230);
+		}
+		.btn-black {				
+			background-color: white;
+			color: black;							  
+		}
+		.btn-black:hover{	
+			background-color: rgb(235,235,235);
+			color: black;
+		}
+
+	</style>
+</head>
+<body>
+	
+	<table class="table" border="2px">
+			<tr>			
+				<td colspan="4" class="screen">	
+					<div id="display1"  style="height:20px; font-size:xx-small; text-align:right;">
+
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="screen">
+					<div id="display"  style="height:40px; font-size:medium; text-align:right;">
+					</div>
+				</td>
+			</tr>
+		<tr class="border">
+			<td><input type="button" value="sin" class=" btn-black design" onclick="op('sin')"></td>
+			<td><input type="button" value="cos" class="btn-black design" onclick="op('cos')"></td>
+			<td><input type="button" value="tan" class="btn-black design" onclick="op('tan')"></td>
+			<td><input type="button" value="CE" class="btn-black design" onclick="ce()"></td>
+		</tr>
+		<tr class="border">
+			<td><input type="button" value="7" class="btn-black design" onclick="add(7)"></td>
+			<td><input type="button" value="8" class="btn-black design" onclick="add(8)"></td>
+			<td><input type="button" value="9" class="btn-black design" onclick="add(9)"></td>
+			<td><input type="button" value="x" class="btn-black design" onclick="op('x')"></td>
+		</tr>
+		<tr class="border">
+			<td><input type="button" value="4" class="btn-black design" onclick="add(4)"></td>
+			<td><input type="button" value="5" class="btn-black design" onclick="add(5)"></td>
+			<td><input type="button" value="6" class="btn-black design" onclick="add(6)"></td>
+			<td><input type="button" value="-" class="btn-black design" onclick="op('-')"></td>
+		</tr>
+		<tr class="border">
+			<td><input type="button" value="1" class="btn-black design" onclick="add(1)"></td>
+			<td><input type="button" value="2" class="btn-black design" onclick="add(2)"></td>
+			<td><input type="button" value="3" class="btn-black design" onclick="add(3)"></td>
+			<td><input type="button" value="+" class="btn-black design" onclick="op('+')"></td>
+		</tr>
+		<tr class="border">
+			<td><input type="button" value="0" class="btn-black design" onclick="add(0)"></td>
+			<td><input type="button" value="." class="btn-black design" onclick="add('.')"></td>
+			<td><input type="button" value="=" class="btn-black design" style="background-color:indianred;" onclick="eq()"></td>
+			<td><input type="button" value="/" class="btn-black design" onclick="op('/')"></td>
+		</tr>
+	</table>
+</body>
+</html>
