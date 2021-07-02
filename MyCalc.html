@@ -8,13 +8,14 @@
 		.design{
 			border-color:transparent; 
 			font-family: monospace;
-			font-size:xx-small;
+			font-size:x-large;
 			margin: -2px;
 			padding-top:4px;
 			padding-bottom:4px;
-			width:40px;
-			height: 30px;
+			width:122px;
+			height: 95px;
 			background-color:rgb(225, 225, 225);
+
 		}
 		.screen{
 			border-color:transparent;
@@ -22,7 +23,12 @@
 		}
 		.table{
 			border-color: transparent; 
-			background-color: rgb(230, 230, 230);	
+			background-color: rgb(228, 228, 228);
+			margin-left: 700px;
+			margin-top: 150px;
+			width: 510px;	
+			height: 600px;
+			box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19)
 		}
 		.btn-black {				
 			background-color: white;
@@ -32,55 +38,59 @@
 			background-color: rgb(235,235,235);
 			color: black;
 		}
+		.img{
+			background-image:url(https://wppenergy.io/wp-content/uploads/2018/10/light-bg_NCP.jpg) ;
+
+		}
 
 	</style>
 </head>
-<body>
-	
-	<table class="table" border="2px">
-			<tr>			
-				<td colspan="4" class="screen">	
-					<div id="display1"  style="height:20px; font-size:xx-small; text-align:right;">
+<body class="img">
+		<table class="table" border="5px"  >
+				<tr>			
+					<td colspan="4" class="screen">	
+						<div id="display1"  style="height:60px; font-size:large; text-align:right;">
 
-					</div>
-				</td>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4" class="screen">
+						<div id="display"  style="height:90px; font-size:xx-large; text-align:right;">
+						</div>
+					</td>
+				</tr>
+			<tr class="border">
+				<td><input type="button" value="sin" class=" btn-black design" onclick="op('sin')"></td>
+				<td><input type="button" value="cos" class="btn-black design" onclick="op('cos')"></td>
+				<td><input type="button" value="tan" class="btn-black design" onclick="op('tan')"></td>
+				<td><input type="button" value="CE" class="btn-black design" onclick="ce()"></td>
 			</tr>
-			<tr>
-				<td colspan="4" class="screen">
-					<div id="display"  style="height:40px; font-size:medium; text-align:right;">
-					</div>
-				</td>
+			<tr class="border">
+				<td><input type="button" value="7" class="btn-black design" onclick="add(7)"></td>
+				<td><input type="button" value="8" class="btn-black design" onclick="add(8)"></td>
+				<td><input type="button" value="9" class="btn-black design" onclick="add(9)"></td>
+				<td><input type="button" value="x" class="btn-black design" onclick="op('x')"></td>
 			</tr>
-		<tr class="border">
-			<td><input type="button" value="sin" class=" btn-black design" onclick="op('sin')"></td>
-			<td><input type="button" value="cos" class="btn-black design" onclick="op('cos')"></td>
-			<td><input type="button" value="tan" class="btn-black design" onclick="op('tan')"></td>
-			<td><input type="button" value="CE" class="btn-black design" onclick="ce()"></td>
-		</tr>
-		<tr class="border">
-			<td><input type="button" value="7" class="btn-black design" onclick="add(7)"></td>
-			<td><input type="button" value="8" class="btn-black design" onclick="add(8)"></td>
-			<td><input type="button" value="9" class="btn-black design" onclick="add(9)"></td>
-			<td><input type="button" value="x" class="btn-black design" onclick="op('x')"></td>
-		</tr>
-		<tr class="border">
-			<td><input type="button" value="4" class="btn-black design" onclick="add(4)"></td>
-			<td><input type="button" value="5" class="btn-black design" onclick="add(5)"></td>
-			<td><input type="button" value="6" class="btn-black design" onclick="add(6)"></td>
-			<td><input type="button" value="-" class="btn-black design" onclick="op('-')"></td>
-		</tr>
-		<tr class="border">
-			<td><input type="button" value="1" class="btn-black design" onclick="add(1)"></td>
-			<td><input type="button" value="2" class="btn-black design" onclick="add(2)"></td>
-			<td><input type="button" value="3" class="btn-black design" onclick="add(3)"></td>
-			<td><input type="button" value="+" class="btn-black design" onclick="op('+')"></td>
-		</tr>
-		<tr class="border">
-			<td><input type="button" value="0" class="btn-black design" onclick="add(0)"></td>
-			<td><input type="button" value="." class="btn-black design" onclick="add('.')"></td>
-			<td><input type="button" value="=" class="btn-black design" style="background-color:indianred;" onclick="eq()"></td>
-			<td><input type="button" value="/" class="btn-black design" onclick="op('/')"></td>
-		</tr>
-	</table>
+			<tr class="border">
+				<td><input type="button" value="4" class="btn-black design" onclick="add(4)"></td>
+				<td><input type="button" value="5" class="btn-black design" onclick="add(5)"></td>
+				<td><input type="button" value="6" class="btn-black design" onclick="add(6)"></td>
+				<td><input type="button" value="-" class="btn-black design" onclick="op('-')"></td>
+			</tr>
+			<tr class="border">
+				<td><input type="button" value="1" class="btn-black design" onclick="add(1)"></td>
+				<td><input type="button" value="2" class="btn-black design" onclick="add(2)"></td>
+				<td><input type="button" value="3" class="btn-black design" onclick="add(3)"></td>
+				<td><input type="button" value="+" class="btn-black design" onclick="op('+')"></td>
+			</tr>
+			<tr class="border">
+				<td><input type="button" value="0" class="btn-black design" onclick="add(0)"></td>
+				<td><input type="button" value="." class="btn-black design" onclick="add('.')"></td>
+				<td><input type="button" value="=" class="btn-black design" style="background-color:indianred;" onclick="eq()"></td>
+				<td><input type="button" value="/" class="btn-black design" onclick="op('/')"></td>
+			</tr>
+		</table>
+
 </body>
 </html>
